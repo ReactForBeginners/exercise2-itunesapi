@@ -1,3 +1,5 @@
+'use strict';
+
 var SearchContainer = React.createClass({
 	render: function(){
 		return (
@@ -33,15 +35,6 @@ var ResultContainer = React.createClass({
 		);
 	}
 });
-
-/*var Item = React.createClass({
-	render: function(){
-		return(
-
-		);
-	}
-});
-*/
 
 var App = React.createClass({
 	
