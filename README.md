@@ -24,7 +24,7 @@ Before you start coding, you should break the UI into components. Check out this
 
 ```
 ├── App
-│		├── SearchBar
+│	├── SearchBar
 │   ├── ListContainer
 │   ├-─ ├── SingleItem
 │   ├-─ ├── List
