@@ -12,15 +12,24 @@ To get started, clone this repo. We've linked to the jQuery CDN for you in the H
 
 ## Running the app
 
-With some browsers (Safari, Firefox) you can run the app by simply dragging *index.html* into the browser. If you're using Chrome, you'll mostl likely have to start a simple server. If so, head over to the directory with your Command Line Interface and type the following:
+With some browsers (Safari, Firefox) you can run the app by simply dragging *index.html* into the browser. If you're using Chrome, you'll most likely have to start a simple server. If so, head over to the directory with your Command Line Interface and type the following:
 
 	python -m SimpleHTTPServer
 
 ## Breaking the UI into components
 
-Before you start coding, you'll want to break the UI into components. Check out this tutorial on how to break you UI into components.
+Before you start coding, you should break the UI into components. Check out this tutorial on how to break you UI into components.
 
 ![text](ui.png)
+
+```
+├── App
+│	├── SearchBar
+│   ├── ListContainer
+│   ├-─ ├── SingleItem
+│   ├-─ ├── List
+```
+
 
 ## Fetch the users inputs
 
