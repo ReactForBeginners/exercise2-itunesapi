@@ -1,12 +1,12 @@
 # iTunes Search App
 
-This exercise will teach you how to use AJAX with React, so that you'll be able to send requests to API's in your React apps. You'll also be introduced to *refs*, *findDOMNode*, *getDefaultProps* and *propTypes*.
+This exercise will teach you how to use AJAX with React, so that you'll be able communicate with API's in your React apps. You'll also be introduced to *refs*, *findDOMNode*, and *propTypes*.
 
-You'll be creating an app using the iTunes Search API, in which users can search for various products on iTunes.
+The app will be built using the iTunes Search API, in which users can search for various products on iTunes.
 
-The search area should include both an input field and a select option. The former is get the search query from the user, the latter for specifying the iTunes section (film, music, apps, podcasts etc).
+The search area should include both an input field and a select option. The former is get the search query, the latter for specifying the iTunes section (film, music, apps, podcasts etc).
 
-Based on this, you'll show the user the most relevant products from iTunes.
+Based on this, the app will show the user the most relevant products from iTunes.
 
 To get started, clone this repo. We've linked to the jQuery CDN for you in the HTML file. Your React components ought to be added in main.js.
 
@@ -24,8 +24,8 @@ Before you start coding, you should break the UI into components. Check out this
 
 ```
 ├── App
-│	├── SearchBar
-│   ├── ListContainer
+│	├-─ SearchBar
+│   ├-─ ListContainer
 │   ├-─ ├── SingleItem
 │   ├-─ ├── List
 ```
