@@ -24,10 +24,10 @@ Before you start coding, you should break the UI into components. Check out this
 
 ```
 ├── App
-│	├-─ SearchBar
-│   ├-─ ListContainer
-│   ├-─ ├── SingleItem
-│   ├-─ ├── List
+│   ├── SearchBar
+│   ├── ListContainer
+│   │   ├-─ SingleItem
+│   │   ├-─ List
 ```
 
 
