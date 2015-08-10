@@ -2,7 +2,7 @@
 
 This exercise will teach you how to use AJAX with React, so that you'll be able communicate with API's in your React apps. You'll also be introduced to *refs*, *findDOMNode*, and *propTypes*.
 
-The app will be built using the iTunes Search API, in which users can search for various products on iTunes.
+The app will be built using the iTunes Search API, in which users can search for various products on iTunes. Like [this one.](http://reactforbeginners.github.io/exercise2-itunesapi/)
 
 The search area should include both an input field and a select option. The former is get the search query, the latter for specifying the iTunes section (film, music, apps, podcasts etc).
 
