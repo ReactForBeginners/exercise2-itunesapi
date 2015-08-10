@@ -20,7 +20,7 @@ With some browsers (Safari, Firefox) you can run the app by simply dragging *ind
 
 Before you start coding, you should break the UI into components. Check out this tutorial on how to break you UI into components.
 
-![text](ui.png)
+![text](https://github.com/ReactForBeginners/exercise2-itunesapi/blob/gh-pages/ui.png?raw=true)
 
 The parent-child relationships of the components can also be visualized like this:   
 
@@ -77,5 +77,5 @@ If you finish up before the deadline, use the remaining time to add the followin
 * **Save item**  
 The ability save items in the search results to another list.
 
-* **Inline styles**
+* **Inline styles**  
 Style the app using Reacts [inline styles.](https://facebook.github.io/react/tips/inline-styles.html)
