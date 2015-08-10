@@ -14,7 +14,6 @@ var SearchContainer = React.createClass({
 			</div>
 		);
 	},
-
 	createAjax: function(){
 		var query 	 	= React.findDOMNode(this.refs.query).value;
 		var category 	= React.findDOMNode(this.refs.category).value;
@@ -27,7 +26,7 @@ var ResultContainer = React.createClass({
 	render: function(){
 		var apps = this.props.searchResult.map(function(app,index){
 			return <li key={index}>{app.trackName}</li>
-		})
+		});
 		return(
 			<ul>
 				{apps}
@@ -36,14 +35,12 @@ var ResultContainer = React.createClass({
 	}
 });
 
-var App = React.createClass({
-	
+var SearchApp = React.createClass({
 	getInitialState: function(){
 		return {
 			searchResult: []
 		}
 	},
-
 	render: function(){
 		return (
 			<div>
@@ -55,14 +52,11 @@ var App = React.createClass({
 			</div>
 		);
 	},
-
 	showApps: function(response){
-		console.log(response.results);
 		this.setState({
 			searchResult: response.results
 		})
 	},
-
 	search: function(URL){
 		$.ajax({
 			type: "GET",
@@ -77,6 +71,4 @@ var App = React.createClass({
 
 });
 
-
-
-React.render(<App />,  document.getElementById("content"));
+React.render(<SearchApp />,  document.getElementById("content"));
