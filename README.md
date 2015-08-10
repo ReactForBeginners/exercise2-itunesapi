@@ -42,12 +42,13 @@ You'll need to fetch what query and category the user wants to search for. To do
 		render: function(){
 			return(
 				<div>
-				<input 
-					type="text" 
-					ref="query" />
-				<input 
-					type"submit" 
-					onClick={this.handleClick} />
+					<input 
+						type="text" 
+						ref="query" />
+					<input 
+						type"submit" 
+						onClick={this.handleClick} />
+				</div>
 			);
 		},
 	});
