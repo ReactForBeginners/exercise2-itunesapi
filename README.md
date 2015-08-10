@@ -72,9 +72,10 @@ Replace QUERY with the search query from the user, and CATEGORY with the correct
 
 ## Stretch goals:
 
-If you finish up early, do the following streatch goals:
+If you finish up before the deadline, use the remaining time to add the following:
 
 * **Save item**  
 The ability save items in the search results to another list.
 
-* 
+* **Inline styles**
+Style the app using Reacts [inline styles.](https://facebook.github.io/react/tips/inline-styles.html)
