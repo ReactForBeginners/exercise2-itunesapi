@@ -22,12 +22,13 @@ Before you start coding, you should break the UI into components. Check out this
 
 ![text](ui.png)
 
+The parent-child relationships of the components can also be visualized like this:   
+
 ```
-├── App
+├── SearchApp
 │   ├── SearchBar
-│   ├── ListContainer
-│   │   ├-─ SingleItem
-│   │   ├-─ List
+│   ├── ItemList
+│   │   ├── Item
 ```
 
 
@@ -73,7 +74,7 @@ Replace QUERY with the search query from the user, and CATEGORY with the correct
 
 If you finish up early, do the following streatch goals:
 
-* Save feature  
+* **Save item**  
 The ability save items in the search results to another list.
 
 * 
