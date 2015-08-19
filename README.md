@@ -1,10 +1,10 @@
 # iTunes Search App
 
-This exercise will teach you how to use AJAX with React, so that you'll be able to send requests to API's in your React apps. You'll also be introduced to *refs*, *findDOMNode*, *getDefaultProps* and *propTypes*.
+This exercise will teach you how to use AJAX with React, so that you'll be able to send requests to API's in your React apps.
 
 You'll be creating an app using the iTunes Search API, in which users can search for various products on iTunes.
 
-The search area should include both an input field and a select option. The former is get the search query from the user, the latter for specifying the iTunes section (film, music, apps, podcasts etc).
+The search area should include both an input field and a select option. The former is get the search query, the latter for specifying the iTunes section (film, music, apps, podcasts etc).
 
 Based on this, you'll show the user the most relevant products from iTunes.
 
@@ -27,31 +27,14 @@ Before you start coding, you should break the UI into components. Check out this
 │	├── SearchBar
 │   ├── ListContainer
 │   ├-─ ├── SingleItem
-│   ├-─ ├── List
 ```
 
 
 ## Fetch the users inputs
 
-You'll need to fetch what query and category the user wants to search for. To do this, use *refs* and *findDOMNode*. Below is an example on how to you can fetch the value of an input field using this technique.
+You can either use controlled components or *refs* & *findDOMNode* to fetch the user's inputs. An example of *refs* & *findDOMNode* can be found [here](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#controlled-components). 
 
-	var App = React.createClass({
-		handleClick: function(){
-			var query = React.findDOMNode(this.refs.query).value;
-		},
-		render: function(){
-			return(
-				<div>
-					<input 
-						type="text" 
-						ref="query" />
-					<input 
-						type"submit" 
-						onClick={this.handleClick} />
-				</div>
-			);
-		},
-	});
+An example of using controlled components can be found [here.](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#refs-and-finddomnode)
 
 ## Composing the Ajax request
 
