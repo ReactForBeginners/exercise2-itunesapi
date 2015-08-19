@@ -23,12 +23,6 @@ The React docs are [great](https://facebook.github.io/react/docs/getting-started
 
 Don't try and built the entire app before you test it in the browser. Take small incremental steps and test how it works.
 
-## Running the app
-
-With some browsers (Safari, Firefox) you can run the app by simply dragging *index.html* into the browser. If you're using Chrome, you'll most likely have to start a simple server. If so, head over to the directory with your Command Line Interface and type the following:
-
-	python -m SimpleHTTPServer
-
 ## Breaking the UI into components
 
 Before you start coding, you should break the UI into components. Check out this tutorial on how to break you UI into components.
