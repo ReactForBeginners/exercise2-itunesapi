@@ -12,10 +12,10 @@ To get started, clone this repo. We've linked to the jQuery CDN for you in the H
 
 ## Remember:
 
-**Use the React docs**  
+### Use the React docs 
 The React docs are [great](https://facebook.github.io/react/docs/getting-started.html). Use them!
 
-**Build one line at a time**  
+### Build one line at a time
 
 Don't try and built the entire app before you test it in the browser. Take small incremental steps and test how it works.
 
