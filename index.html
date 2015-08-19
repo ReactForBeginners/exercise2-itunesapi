@@ -12,18 +12,16 @@
         // modify the code below
         'use strict';
 
-        var RESULTS = ["James Bond", "Superman", "Jason Bourne", "Terminator"];
-
-        var SearchApp = React.createClass({
+        var App = React.createClass({
             render: function(){
                 return (
                     <div>
-                    {this.props.results}
+                        Hello world
                     </div>
                 );
             }
         });
 
-        React.render(<SearchApp results={RESULTS}/>,  document.getElementById("content"));
+        React.render(<App />,  document.getElementById("content"));
         </script>
 </html>
