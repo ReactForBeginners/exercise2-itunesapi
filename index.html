@@ -8,6 +8,88 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
         <script src="https://fb.me/react-with-addons-0.13.3.js"></script>
         <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
-        <script type="text/jsx" src="main.js">
+        <script type="text/jsx">
+        'use strict';
+
+        var ResultItem = React.createClass({
+            render: function(){
+                return (
+                    <li key={this.props.index}>{this.props.result}</li>
+                );
+            }
+        });
+
+        var ResultContainer = React.createClass({
+            render: function(){
+                
+                var apps = this.props.searchResult.map(function(app,index){
+                    return <ResultItem key={index} result={app.trackName} /> 
+                });
+
+                return(
+                    <ul>
+                        {apps}
+                    </ul>           
+                );
+            }
+        });
+
+        var SearchContainer = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                        <input type="text" ref="query" />
+                        <select ref="category">
+                            <option value="software">Apps</option>
+                            <option value="movie">Films</option>
+                            <option value="music">Music</option>
+                        </select>
+                        <input type="submit" onClick={this.createAjax} />
+                    </div>
+                );
+            },
+            createAjax: function(){
+                var query       = React.findDOMNode(this.refs.query).value;
+                var category    = React.findDOMNode(this.refs.category).value;
+                var URL = 'https://itunes.apple.com/search?term=' + query +'&country=us&entity=' + category;
+                this.props.search(URL)
+            }
+        });
+
+        var SearchApp = React.createClass({
+            getInitialState: function(){
+                return {
+                    searchResult: []
+                }
+            },
+            render: function(){
+                return (
+                    <div>
+                    <SearchContainer 
+                        search={this.search} />
+                    <ResultContainer 
+                        searchResult={this.state.searchResult} />
+
+                    </div>
+                );
+            },
+            showApps: function(response){
+                this.setState({
+                    searchResult: response.results
+                })
+            },
+            search: function(URL){
+                $.ajax({
+                    type: "GET",
+                    dataType: 'jsonp',
+                    url: URL,
+                    success: function(response){
+                        this.showApps(response);
+                    }.bind(this)
+                });
+            }
+        });
+
+        React.render(<SearchApp />,  document.getElementById("content"));
         </script>
 </html>
