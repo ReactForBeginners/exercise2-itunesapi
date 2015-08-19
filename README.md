@@ -27,7 +27,7 @@ Don't try and built the entire app before you test it in the browser. Take small
 
 Before you start coding, you should break the UI into components. Check out this tutorial on how to break you UI into components.
 
-![text](ui.png)
+![text](https://github.com/ReactForBeginners/exercise2-itunesapi/blob/gh-pages/ui.png?raw=true)
 
 ```
 ├── App
