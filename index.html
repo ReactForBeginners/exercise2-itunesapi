@@ -22,13 +22,13 @@
         var ResultContainer = React.createClass({
             render: function(){
                 
-                var apps = this.props.searchResult.map(function(app,index){
+                var items = this.props.searchResult.map(function(app,index){
                     return <ResultItem key={index} result={app.trackName} /> 
                 });
 
                 return(
                     <ul>
-                        {apps}
+                        {items}
                     </ul>           
                 );
             }
