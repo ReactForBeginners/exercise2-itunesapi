@@ -41,7 +41,7 @@ An example of using *controlled components* can be found [here.](https://github.
 
 In the component you'll want to send the Ajax request from, add a following method:
 
-	sendAjax: function(query, option){
+	sendAjax: function(URL){
 		$.ajax({
 			// compose the Ajax call
 		});
