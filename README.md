@@ -1,18 +1,18 @@
 # iTunes Search App
 
-This exercise will teach you how to use AJAX with React, so that you'll be able to send requests to external API's in your React apps.
+This exercise will teach you how to use AJAX with React, so that you'll be able to send requests to external API's from your React apps.
 
-You'll be creating an app using the iTunes Search API, in which users can search for various products on iTunes.
+You'll create which use the iTunes Search API, so that users can search for products on iTunes.
 
-The search area should include both an input field and a select option. The former is get the search query, the latter for specifying the iTunes section (film, music, apps, podcasts etc). Based on this, you'll show the user the most relevant products from iTunes.
+The search area should include both an input field and a select option. The former is get the search query, the latter is for specifying the iTunes section (film, music, apps, podcasts etc). Based on this, you'll show the user the most relevant products from iTunes.
 
 ## Getting started
 
-To get started, clone this repo. We've linked to the jQuery CDN for you in the HTML file, plus the React.js source and the JSX-transformer.  
+To get started, clone this repo. We've linked to the jQuery source, the React.js source and the JSX-transformer in the *index.html* file, so you don't have to do this yourself.  
 
 Your React components will go within the **script** tag in the *index.html* file. This way, you won't need to setup a local server to run the app; simply drag the *index.html* file into the browser instead. 
 
-**Note:** This is not a good practice, and not what you'd do in production - BUT - we want to get up and running quickly. So if you've never configured a local server before, don't worry about it.
+**Note:** This is not a good practice, and not what you'd do in production - BUT - we want to get up and running quickly, and avoid all confusion, as we noticed that some students were having problems with this yesterday. So if you've never configured a local server before, don't worry about it.
 
 ## Remember:
 
@@ -58,5 +58,3 @@ If you finish up early, do the following streatch goals:
 
 * Save feature  
 The ability save items in the search results to another list.
-
-* 
