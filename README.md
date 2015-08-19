@@ -17,15 +17,15 @@ Your React components will go within the **script** tag in the *index.html* file
 ## Remember:
 
 ### Use the React docs 
-The React docs are [great](https://facebook.github.io/react/docs/getting-started.html). Use them!
+The React docs are [great](https://facebook.github.io/react/docs/getting-started.html). It's a good idea to have these in an open tab when you're developing, so you can quickly look up stuff you're uncertain about. They provide good examples and explanations.
 
-### Build one line at a time
+### Take small steps, and test it often!
 
-Don't try and built the entire app before you test it in the browser. Take incremental steps and test how it works in the browser.
+Don't try and built the entire app before you test it in the browser. Take incremental steps and test how it works in the browser. Remember to use the console to check if you're getting any errors. The error messages will often point you in the right direction.
 
 ## Breaking the UI into components
 
-Before you start coding, you should break the UI into components. Check out this tutorial on how to break you UI into components.
+Before you start coding, you should get an overview over your UI, by breaking it into components. Check out [this tutorial](http://facebook.github.io/react/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy) on how to break you UI into components.
 
 ![text](https://github.com/ReactForBeginners/exercise2-itunesapi/blob/gh-pages/ui.png?raw=true)
 
