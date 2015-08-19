@@ -8,7 +8,7 @@ The search area should include both an input field and a select option. The form
 
 ## Getting started
 
-To get started, clone this repo. We've linked to the jQuery source, the React.js source and the JSX-transformer in the *index.html* file, so you don't have to do this yourself.  
+To get started, clone this repo. We've linked to jQuery, React and the JSX-transformer in the *index.html* file, so you don't have to do this yourself.  
 
 Your React components will go within the **script** tag in the *index.html* file. This way, you won't need to setup a local server to run the app; simply drag the *index.html* file into the browser instead. 
 
