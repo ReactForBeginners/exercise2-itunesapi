@@ -8,6 +8,22 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
         <script src="https://fb.me/react-with-addons-0.13.3.js"></script>
         <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
-        <script type="text/jsx" src="main.js">
+        <script type="text/jsx">
+        // modify the code below
+        'use strict';
+
+        var RESULTS = ["James Bond", "Superman", "Jason Bourne", "Terminator"];
+
+        var SearchApp = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                    {this.props.results}
+                    </div>
+                );
+            }
+        });
+
+        React.render(<SearchApp results={RESULTS}/>,  document.getElementById("content"));
         </script>
 </html>
