@@ -29,14 +29,6 @@ Before you start coding, you should break the UI into components. Check out this
 
 ![text](https://github.com/ReactForBeginners/exercise2-itunesapi/blob/gh-pages/ui.png?raw=true)
 
-```
-├── App
-│	├── SearchBar
-│   ├── ListContainer
-│   ├-─ ├── SingleItem
-```
-
-
 ## Fetch the users inputs
 
 You can either use controlled components or *refs* & *findDOMNode* to fetch the user's inputs. An example of *refs* & *findDOMNode* can be found [here](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#controlled-components). 
