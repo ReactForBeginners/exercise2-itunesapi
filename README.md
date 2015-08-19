@@ -31,9 +31,11 @@ Before you start coding, you should break the UI into components. Check out this
 
 ## Fetch the users inputs
 
-You can either use controlled components or *refs* & *findDOMNode* to fetch the user's inputs. An example of *refs* & *findDOMNode* can be found [here](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#controlled-components). 
+You can either use **controlled components** or *refs* & *findDOMNode* to fetch the user's inputs.  
 
-An example of using controlled components can be found [here.](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#refs-and-finddomnode)
+An example of *refs* & *findDOMNode* can be found [here](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#controlled-components). 
+
+An example of using **controlled components** can be found [here.](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#refs-and-finddomnode)
 
 ## Composing the Ajax request
 
