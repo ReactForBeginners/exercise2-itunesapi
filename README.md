@@ -1,6 +1,6 @@
 # iTunes Search App
 
-This exercise will teach you how to use AJAX with React, so that you'll be able to send requests to API's in your React apps.
+This exercise will teach you how to use AJAX with React, so that you'll be able to send requests to external API's in your React apps.
 
 You'll be creating an app using the iTunes Search API, in which users can search for various products on iTunes.
 
@@ -9,6 +9,15 @@ The search area should include both an input field and a select option. The form
 Based on this, you'll show the user the most relevant products from iTunes.
 
 To get started, clone this repo. We've linked to the jQuery CDN for you in the HTML file. Your React components ought to be added in main.js.
+
+## Remember:
+
+**Use the React docs**  
+The React docs are [great](https://facebook.github.io/react/docs/getting-started.html). Use them!
+
+**Build one line at a time**  
+
+Don't try and built the entire app before you test it in the browser. Take small incremental steps and test how it works.
 
 ## Running the app
 
