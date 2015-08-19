@@ -21,7 +21,7 @@ The React docs are [great](https://facebook.github.io/react/docs/getting-started
 
 ### Build one line at a time
 
-Don't try and built the entire app before you test it in the browser. Take small incremental steps and test how it works.
+Don't try and built the entire app before you test it in the browser. Take incremental steps and test how it works in the browser.
 
 ## Breaking the UI into components
 
@@ -31,11 +31,11 @@ Before you start coding, you should break the UI into components. Check out this
 
 ## Fetch the users inputs
 
-You can either use **controlled components** or *refs* & *findDOMNode* to fetch the user's inputs.  
+You can either use *controlled components* or *refs* & *findDOMNode* to fetch the user's inputs.  
 
 An example of *refs* & *findDOMNode* can be found [here](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#controlled-components). 
 
-An example of using **controlled components** can be found [here.](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#refs-and-finddomnode)
+An example of using *controlled components* can be found [here.](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1#refs-and-finddomnode)
 
 ## Composing the Ajax request
 
