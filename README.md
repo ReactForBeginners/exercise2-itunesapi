@@ -2,7 +2,7 @@
 
 This exercise will teach you how to use AJAX with React, so that you'll be able to send requests to external API's from your React apps. 
 
-You'll create which use the iTunes Search API, so that users can search for products on iTunes.
+You'll create an app which use the iTunes Search API, so that users can search for products on iTunes.
 
 The search area should include both an input field and a select option. The former is get the search query, the latter is for specifying the iTunes section (film, music, apps, podcasts etc). Based on this, you'll show the user the most relevant products from iTunes.
 
