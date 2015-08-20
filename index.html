@@ -1,11 +1,11 @@
 <!-- DOCTYPE HTML -->
 <html>
     <head>
-        <title>Ajax</title>
+        <title>Itunes Search</title>
     </head>
     <body>
         <div id="content"></div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://fb.me/react-with-addons-0.13.3.js"></script>
         <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
         <script type="text/jsx">
@@ -13,14 +13,105 @@
         'use strict';
 
         var App = React.createClass({
+            getInitialState: function() {
+                return {
+                    text: '',
+                    type: 'movie',
+                    itunesItems: new Array()
+                }
+            },
+            getText: function(event){
+                this.setState({
+                    text: event.target.value
+                })
+            },
+            getType: function(event){
+                this.setState({
+                    type: event.target.value
+                })
+            },
+            getItunesItems: function(){
+                var url = 'https://itunes.apple.com/search';
+
+                $.ajax({
+                    url: url,
+                    dataType: 'jsonp',
+                    data: {
+                        term: this.state.text,
+                        country: 'us',
+                        media: this.state.type
+                    },
+                    crossDomain: true
+                }).done(function(data){
+                    this.setState({
+                        itunesItems: data.results
+                    });
+                }.bind(this));
+            },
             render: function(){
-                return (
+                return(
                     <div>
-                        Hello world
+                        <Input
+                            text={this.state.text}
+                            getText={this.getText}
+                            type={this.state.type}
+                            getType={this.getType}
+                            getItunesItems={this.getItunesItems} />
+                        <ItunesList
+                            itunesItems={this.state.itunesItems} />
                     </div>
                 );
             }
         });
+
+        var Input = React.createClass({
+            render: function(){
+                return(
+                    <div>
+                        <input type="text"
+                            value={this.props.text}
+                            onChange={this.props.getText} />
+                        <select name="type" onChange={this.props.getType}>
+                            <option>movie</option>
+                            <option>podcast</option>
+                            <option>music</option>
+                            <option>musicVideo</option>
+                            <option>audiobook</option>
+                            <option>shortFilm</option>
+                            <option>tvShow</option>
+                            <option>software</option>
+                            <option>ebook</option>
+                        </select>
+                        <input type="submit" name="button" value="Click" onClick={this.props.getItunesItems} />
+                    </div>
+                );
+            }
+        });
+
+        var ItunesList = React.createClass({
+            render: function(){
+                var items = this.props.itunesItems.map(function(item, index){
+                    return <ItunesListItem
+                                index={index}
+                                item={item.trackName} />
+                });
+
+                return (
+                    <ul>
+                        {items}
+                    </ul>
+                )
+            }
+        });
+
+        var ItunesListItem = React.createClass({
+            render: function(){
+                return (
+                    <li key={this.props.index}>{this.props.item}</li>
+                )
+            }
+        });
+
 
         React.render(<App />,  document.getElementById("content"));
         </script>
